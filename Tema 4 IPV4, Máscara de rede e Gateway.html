@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resumo</title>
+</head>
+<body>
+
+<h1>Tema 4 IPV4, Máscara de Rede e Gateway</h1>
+
+<h1>O que é IPV4?</h1>
+
+<img src="IPV4.1.jpg" alt="">
+
+<p>
+    O protocolo do IPV4 permite que nossos hosts trafeguem na internet e todo host que estiver
+    conectado (online) terá um código "99.48.224.242" por exemplo, que permite enviar e receber informações 
+    de outros hosts que estão conectados na rede.
+</p>
+
+<p>
+    Estes endereços IP, o IPV4, é formado por 04 blocos de 8 bits (8*4 = 32 bits), estes são exibidos 
+por números de 0 a 255, por exemplo "200.145.36.25" ou "65.45.32.41".
+
+</p>
+
+<p>
+    Os endereços IPV4 que iniciam com "192.168", com "10" ou com "172.16" até "172.31", estes 
+são "poupados" para redes locais, portanto não são utilizados na internet.
+</p>
+
+<p>
+    O IPv4 transfere endereços de protocolos de 32 bits. Sustenta mais ou menos 4,29 bilhões de 
+IPs pelo mundo todo, o que nos tirou alcançar na crise atual: O sistema não suportará mais 
+endereços do que isto.
+</p>
+
+<p>
+    O IPV4 suporta por cerca de 4,29 bilhões de IPs por todo o mundo, o que infelizmente possibilitou 
+essa crise atual por falta de IPs
+</p>
+
+<h1>O que é Máscara de Rede?</h1>
+
+<p>
+    Vamos imaginar que a máscara de rede é um bairro no qual possui várias residências (os IPs). 
+Os IPs que utilizam uma determinada classe, pertence aquela classe, da mesma forma que se 
+uma residência (IP), está presente no Bairro (Máscara de Rede) pertence a mesma, sendo que 
+cada IP corresponde a uma máscara de rede:
+</p>
+
+<ul>
+    <li><b>Classe A:</b>10.0.0.0 até 10.225.255.255 (255.0.0.0) - Utiliza apenas o primeiro octeto do IP que 
+        fica exclusivo para a máscara de rede e o restante para os hosts 
+        (11111111.00000000.00000000.00000000).</li>
+    <li><b>Classe B:</b>172.16.0.0 até 172.31.255.255 (255.255.0.0) - Utiliza os dois primeiros octetos do IP 
+        que fica exclusivo para a máscara de rede e o restante para os hosts 
+        (11111111.11111111.00000000.00000000).
+        </li>
+    <li><b>Classe C:</b>192.168.0.0 até 192.168.0.0 (255.255.255.0) - Utiliza os três primeiros octetos do IP 
+        que fica exclusivo para a máscara de rede e o restante para os hosts 
+        (11111111.11111111.11111111.00000000).
+        </li>
+</ul>
+
+<img src="IPV4.jpg" alt="">
+
+<h1>O que é Gateway?</h1>
+
+<p>
+    O Gateway em geral é um host ou dispositivo de rede no qual se depara com duas redes. Essa tecnologia libera a 
+    passagem dos dados entre hosts (Tablet, telefone, computador, notebook entre outros). No qual 
+    pode ser instalado "políticas de acesso", que verificam a segurança dos dados do computador 
+    até a internet.
+</p>
+
+<p>
+    Como havíamos dito o gateway é um portal que libera o acesso para a internet, por exemplo, eu 
+tenho 04 computadores com 04 IPs diferente que estão na mesma máscara de rede, para não 
+ter um modem ou qualquer outro dispositivo que conecte à internet em cada computador tem um 
+gateway que compartilha a internet ou acesso para outra rede em todos os computadores da 
+minha rede.
+</p>
+
+<b>Exemplos:</b>
+
+<p>
+<b>Computador A:</b>
+IP: 192.168.1.100
+Máscara de Rede: 255.255.255.0
+Gateway: 192.168.1.1
+</p>
+
+<p>
+<b>Computador B:</b>
+IP: 192.168.1.158
+Máscara de Rede: 255.255.255.0
+Gateway: 192.168.1.1
+</p>
+
+<h1>Configurando um cliente na rede</h1>
+
+<p>
+    Existem duas formas para configurar um cliente na rede, o dinâmico onde só insere o cabo de 
+rede e o Protocolo DHCP inclui todas as informações como IP, Gateway, DNS e Máscara de 
+Rede, e a outra forma é estático onde você entra em (Painel de Controle – Redes e Internet –
+Central de Rede e Compartilhamento – Alterar as configurações do adaptador – botão direito do 
+mouse em cima do ícone do adaptador – propriedade – Protocolo TCP/IPV4), chegando aqui 
+você inseri manualmente as informações necessárias para se conectar na rede (IPV4, máscara 
+de rede, Gateway e DNS.
+
+
+
+</p>
+
+
+
+
+
+
+</body>
+</html>
